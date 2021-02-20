@@ -57,7 +57,7 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    prompt_color='\[\033[;32m\]'
+    prompt_color='\[\032[;32m\]'
     info_color='\[\033[1;34m\]'
     prompt_symbol=Ⓜ️
     if [ "$EUID" -eq 0 ]; then # Change prompt colors for root user
@@ -69,7 +69,7 @@ if [ "$color_prompt" = yes ]; then
     # BackTrack red prompt
     #PS1='${debian_chroot:+($debian_chroot)}\[\033[01;31m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 else
-    PS1='${debian_chroot:+($debian_chroot)}\u💀\h:\w\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
 unset color_prompt force_color_prompt
 
