@@ -67,6 +67,7 @@ fi
 
 if [ "$color_prompt" = yes ]; then
     prompt_color='\[\033[;34m\]'
+    username_color='\[\033[;33m\]'
     info_color='\[\033[1;32m\]'
     icon_color='\[\033[1;36m\]'
     prompt_symbol=Ⓜ️
@@ -75,7 +76,7 @@ if [ "$color_prompt" = yes ]; then
 	info_color='\[\033[1;31m\]'
 	prompt_symbol=💀
     fi
-    PS1=$prompt_color'┌──${debian_chroot:+($debian_chroot)──}('$info_color'\u'$icon_color'${prompt_symbol}'$info_color'\h'$prompt_color')-[\[\033[0;1m\]\w'$prompt_color']\n'$prompt_color'└─'$info_color'\$\[\033[0m\] '
+    PS1=$prompt_color'┌──${debian_chroot:+($debian_chroot)──}('$username_color'\u'$icon_color'${prompt_symbol}'$info_color'\h'$prompt_color')-[\[\033[0;1m\]\w'$prompt_color']\n'$prompt_color'└─'$info_color'\$\[\033[0m\] '
     # BackTrack red prompt
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
