@@ -68,7 +68,7 @@ fi
 if [ "$color_prompt" = yes ]; then
     prompt_color='\[\033[;34m\]'
     info_color='\[\033[1;32m\]'
-    icon_color='\[\033[1;33m\]'
+    icon_color='\[\033[1;36m\]'
     prompt_symbol=Ⓜ️
     if [ "$EUID" -eq 0 ]; then # Change prompt colors for root user
 	prompt_color='\[\033[;94m\]'
