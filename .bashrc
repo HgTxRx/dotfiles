@@ -56,14 +56,14 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
-# Black: \033[30m
-# Blue:  \033[34m
-# Cyan:  \033[36m
-# Green:  \033[32m
+#   Black:  \033[30m
+#    Blue:  \033[34m
+#    Cyan:  \033[36m
+#   Green:  \033[32m
 # Magenta:  \033[35m
-# Red:  \033[31m
-# White:  \033[37m
-# Yellow:  \033[33m
+#     Red:  \033[31m
+#   White:  \033[37m
+#  Yellow:  \033[33m
 
 if [ "$color_prompt" = yes ]; then
     prompt_color='\[\033[;34m\]'
